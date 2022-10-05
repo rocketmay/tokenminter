@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pd-free-angularcli": {
+    "tokenminter": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -68,14 +68,14 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "pd-free-angularcli:build"
+            "browserTarget": "tokenminter:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "pd-free-angularcli:build:production"
+              "browserTarget": "tokenminter:build:production"
             },
             "development": {
-              "browserTarget": "pd-free-angularcli:build:development"
+              "browserTarget": "tokenminter:build:development"
             },
             "defaultConfiguration": "development"
           }
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pd-free-angularcli:build"
+            "browserTarget": "tokenminter:build"
           }
         },
         "test": {
@@ -124,7 +124,7 @@
         }
       }
     },
-    "pd-free-angularcli-e2e": {
+    "tokenminter-e2e": {
       "root": "e2e",
       "sourceRoot": "e2e",
       "projectType": "application",
@@ -133,7 +133,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "pd-free-angularcli:serve"
+            "devServerTarget": "tokenminter:serve"
           }
         },
         "lint": {
@@ -148,11 +148,11 @@
       }
     }
   },
-  "defaultProject": "pd-free-angularcli",
+  "defaultProject": "tokenminter",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
-      "styleext": "scss"
+      "style": "scss"
     },
     "@schematics/angular:directive": {
       "prefix": "app"
